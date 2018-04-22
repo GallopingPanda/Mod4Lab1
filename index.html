@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="intro.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  
    
     
 </head>
@@ -31,16 +32,16 @@
           </div>
     
 
-    
+    <div class="container">
     <nav class="navbar navbar-inverse">
      <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">MySimpleSite</a>
     </div>           
        
-    <ul class="nav navbar-nav">
-        <li><div class="button">
-            <button class="more">More about me</button>
+    
+        <div class="button">
+            <button class="more btn btn-default navbar-btn navbar-right">More about me</button>
                 <script>
 
                     $(document).ready(function(){
@@ -52,10 +53,10 @@
                     });
 
                 </script>
-            </div></li>
+            </div>
         
-                        <li><div>
-                            <button class="aniButton ">Enlarge Text</button>
+                        <div>
+                            <button class="aniButton btn btn-default navbar-btn navbar-right">Enlarge Text</button>
                                 <script>
 
                                     $(document).ready(function(){
@@ -66,17 +67,21 @@
                                     });
 
                                 </script>
-                            </div></li>
+                            </div>
                     
          
-                        </ul>
+                      
                     </div>
+       
                 </nav>
+       
+    
+    </div>
             
     
     
     
-    <button class="picButton"><img src="https://i.imgur.com/zzeFuU2b.jpg"></button>
+    <button class="picButton "><img src="https://i.imgur.com/zzeFuU2b.jpg"></button>
     
     <script>
     
@@ -101,22 +106,23 @@
         <p class="moreAboutMe">Before I decided I wanted to learn web development, I wanted to be an English teacher. Quite the difference!</p>
          
     </div>
-        <div class = "col-sm-2"></div>
+        <div class = "col-sm-2"> 
+            <div class="refreshPage ">
+                <button class="refresh btn btn-default">Reset the page</button>
+                    <script>
+
+                        $(document).ready(function(){
+                            $(".refresh").click(function(){
+                                location.reload();
+                            });
+
+                        });
+                    </script>
+        </div></div>
     </div>
     
     
-      <div class="refreshPage ">
-        <button class="refresh">Reset the page</button>
-            <script>
-                
-                $(document).ready(function(){
-                    $(".refresh").click(function(){
-                        location.reload();
-                    });
-                   
-                });
-            </script>
-        </div>
+     
 
     
 </body>

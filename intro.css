@@ -34,13 +34,8 @@ p {
 
 
 
-.refresh {
-    position: relative;
-    margin: auto auto;
-    
-}
 
-.refreshPage {
-    width:10%;
-    margin: auto auto;
+
+body {
+    padding-top: 25px;
 }
