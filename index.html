@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Site</title>
+    <link rel="stylesheet" type="text/css" href="intro.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+   
+    
+</head>
+    
+<body>
+
+    
+      
+        <div class="jumbotron">
+                     <h1>Clayton Hamrick</h1>
+    
+                            <script>
+
+                                $(document).ready(function(){
+                                    $("h1").mouseenter(function(){
+                                        $(this).css("color","grey")
+                                    });
+                                    $("h1").mouseleave(function(){
+                                        $(this).css("color","black")
+                                    });
+                                });
+
+                            </script>
+          </div>
+    
+
+    
+    <nav class="navbar navbar-inverse">
+     <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">MySimpleSite</a>
+    </div>           
+       
+    <ul class="nav navbar-nav">
+        <li><div class="button">
+            <button class="more">More about me</button>
+                <script>
+
+                    $(document).ready(function(){
+                        $(".more").click(function(){
+                            $(".moreAboutMe").css("display","block");
+                            $(this).css("display","none");
+
+                        });
+                    });
+
+                </script>
+            </div></li>
+        
+                        <li><div>
+                            <button class="aniButton ">Enlarge Text</button>
+                                <script>
+
+                                    $(document).ready(function(){
+                                        $(".aniButton").click(function(){
+                                            $("p").animate({fontSize:'50px'},"slow")
+                                            $(this).css("display","none")
+                                        });
+                                    });
+
+                                </script>
+                            </div></li>
+                    
+         
+                        </ul>
+                    </div>
+                </nav>
+            
+    
+    
+    
+    <button class="picButton"><img src="https://i.imgur.com/zzeFuU2b.jpg"></button>
+    
+    <script>
+    
+        $(document).ready(function(){
+            $(".picButton").mouseover(function(){
+                $(this).text("Click me!")
+            });
+            $(".picButton").click(function(){
+                $(this).css("display","none")
+            });
+        });
+    </script>
+    
+  
+    <div class = "row">
+        <div class = "col-sm-2"></div>
+        
+    <div class = "col-sm-8">
+        
+         <p>My experience with web design and development is slim. I have created sites using Wordpress, but all of my scratch made website experience has come from my classes over the past year. I hope to learn how to better manipulate the back end of websites so that I have more control over their design and development. I would like to get a job doing web develpment in the future.</p>
+    
+        <p class="moreAboutMe">Before I decided I wanted to learn web development, I wanted to be an English teacher. Quite the difference!</p>
+         
+    </div>
+        <div class = "col-sm-2"></div>
+    </div>
+    
+    
+      <div class="refreshPage ">
+        <button class="refresh">Reset the page</button>
+            <script>
+                
+                $(document).ready(function(){
+                    $(".refresh").click(function(){
+                        location.reload();
+                    });
+                   
+                });
+            </script>
+        </div>
+
+    
+</body>
+    
+</html>
